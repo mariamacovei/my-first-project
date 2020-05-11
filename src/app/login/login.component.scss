@@ -1,0 +1,56 @@
+
+.container-login {
+  padding: 10rem ;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+
+}
+.item{
+  padding: 1.5rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 30rem;
+  padding: 2rem;
+
+}
+
+.label-data-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+
+}
+
+input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin: 0.4rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.2em;
+
+}
+.ng-valid[required] {
+  border: 1px solid #42A948;
+}
+
+.ng-invalid[required] {
+  border: 1px solid red;
+}
+form {
+  text-align: revert;
+  margin: 0 auto;
+}
+

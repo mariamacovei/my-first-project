@@ -1,0 +1,130 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.footer {
+  background-color: #a69c9c;
+  height: 20rem;
+  margin: 0;
+
+  .logo-footer {
+    height: inherit;
+    padding: 5rem 7rem;
+    display: inline;
+
+    @include media-breakpoint-down(xs){
+      display: none !important;
+    }
+
+    .logo {
+      height: 4rem;
+      display: inherit;
+      margin-bottom: 1.2rem;
+
+      @include media-breakpoint-down(sm) {
+        height: 2rem;
+      }
+    }
+
+    .copy-right {
+      color: #6E6F6F;
+
+    }
+  }
+
+  .icon {
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      padding: 0 1.2rem;
+      justify-content: center;
+      height: 100%;
+
+      .social {
+        padding: 1.5rem;
+
+        .phone-icon {
+          height: 2rem;
+
+          @include media-breakpoint-down(md) {
+            height: 1rem;
+          }
+        }
+
+        .mail-icon {
+          height: 2rem;
+
+          @include media-breakpoint-down(md) {
+            height: 1rem;
+
+          }
+        }
+
+        .location-icon {
+          height: 3rem;
+
+          @include media-breakpoint-down(md) {
+            height: 1rem;
+
+          }
+        }
+
+        .social-text {
+          padding-left: 2rem;
+          color: #6E6F6F;
+          font-size: 1.5em;
+
+          @include media-breakpoint-down(md) {
+            font-size: 0.7em;
+
+          }
+        }
+      }
+    }
+  }
+
+  .about-us {
+    padding: 1.2rem;
+    font-family: Lucida Sans Unicode sans-serif;
+
+    @include media-breakpoint-down(sm) {
+      display: none !important;
+    }
+
+
+
+    .about {
+      margin: 0;
+
+      .title {
+        font-size: 2em;
+        color: #142727;
+
+        @include media-breakpoint-down(md) {
+          font-size: 1em;
+        }
+      }
+
+      .text {
+        font-size: 1.5em;
+        padding-right: 2rem;
+
+        @include media-breakpoint-down(md) {
+          font-size: 0.7em;
+        }
+      }
+
+      .copyright {
+        font-size: 1.5em;
+        padding-top: 90px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 0.7em;
+        }
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<app-header></app-header>
+
+<div class="container-login">
+  <div class="item">
+    <img src="../../assets/logimages.png" alt="team"/>
+  </div>
+
+  <form class="login" [formGroup]="profileForm">
+
+    <div class="label-data-input">
+      Email :
+      <input type="email" formControlName="email" required email>
+    </div>
+    <div class="label-data-input">
+      Password:
+      <input type="password" formControlName="password" required password>
+    </div>
+
+    <a routerLink="../register">Register</a>
+
+    <button (click)="login()" [disabled]="!profileForm.valid" class="btn btn-info">Login</button>
+
+  </form>
+</div>
+
+<app-footer></app-footer>

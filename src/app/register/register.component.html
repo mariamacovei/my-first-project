@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<div class="container-login">
+  <div class="item">
+    <img src="../../assets/iconlogin.jpg" alt="team" />
+  </div>
+
+  <form class="login" [formGroup]="profileForm">
+
+    <div class="label-data-input">
+      Name:
+      <input type="text" formControlName="name" required>
+    </div>
+
+    <div class="label-data-input">
+      Email :
+      <input type="email" formControlName="email" required email>
+    </div>
+
+    <div class="label-data-input">
+    Password:
+    <input type="password" formControlName="password" required password>
+    </div>
+
+    <div class="label-data-input">
+      Confirm your password:
+      <input type="password" formControlName="password_confirmation" required password>
+    </div>
+
+    <button (click)="register()" class="btn btn-info" >Register</button>
+
+  </form>
+</div>
+<app-footer></app-footer>

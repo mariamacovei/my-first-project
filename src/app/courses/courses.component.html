@@ -1,0 +1,143 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+
+  <div>
+    <table class="table table-striped table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Course Name</th>
+        <th>Teacher</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let course of courses">
+        <td>{{ course.id }}</td>
+        <td>{{ course.name }}</td>
+        <td>{{ course.teacher }}</td>
+        <td>{{ course.price }}</td>
+        <td>
+<!--          <button (click)="selectProduct(product)">Edit</button>-->
+<!--          <button id="del" (click)="deleteProduct(product.id)">Delete</button>-->
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br>
+ <div class="course">
+  <h4>Programator- profesia omului, care consta in prelucrarea software-ului pentru dispozitive programabile.
+    Exemple de astfel de dispozitive sunt Dekstop, telefon mobil, smartphone, comunicator, consola de jocuri,
+    server, supercomputer, microcontroler si calculatoare industriale.
+    Din greseala, programatorul este uneori numit administrator de sistem si alti specialisti IT.
+    Astazi, in piata locurilor de munca cei mai populari sunt programatorii 1C , programatori PHP , C , C++ ,
+    C#, Java, Python  dezvoltatorii de baze de date, testerii software.<br>
+    Deja am contribuit la pregătirea și angajarea a mii de persoane în domeniul IT. Numără-te și tu printre ei!
+      Peste 80% dintre absolvenții noștri și-au găsit un job în IT în primele 3 luni de la absolvire. Și tu poți!<BR>
+      Profesorii și mentorii "Courses IT "Lab sunt programatori cu experiență reală în IT, pasionați de educație și dornici
+      să te ajute să îți împlinești visul de a deveni junior developer</h4>
+</div>
+</div>
+
+
+
+<div class="container">
+  <h2 align ="center">Cursuri pentru Profesii IT</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Front-End Developer
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          &rarr; Curs HTML/CSS<br>
+          &rarr; Curs JavaScript<br>
+          &rarr; Curs CSS avansat/SASS
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          Back-End Developer
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          &rarr; Curs Programare PHP/MySQL<br>
+          &rarr; Programare PHP/POO/Laravel
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Specialist QA
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          &rarr; Curs Testare Manuală<br>
+          &rarr; Curs Testare Automată
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Web Designer
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          &rarr; Adobe Photoshop<br>
+          &rarr; Curs UI/UX Design
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Grafic Designer
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          &rarr; Adobe Photoshop<br>
+          &rarr; Curs UI/UX Design
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-home">
+  <section class="gallery" id="gallery">
+    <h2>Activități</h2>
+    <div class="content">
+      <div class="box wow slideInLeft">
+        <img src="../../assets/computer-1245714_1920.jpg" alt="gallery"/>
+      </div>
+      <div class="box wow slideInRight">
+        <img src="../../assets/unnamed.jpg" alt="gallery"/>
+      </div>
+      <div class="box wow slideInLeft">
+        <img src="../../assets/laptop-1478822_1920.jpg" alt="gallery"/>
+      </div>
+      <div class="box wow slideInRight">
+        <img src="../../assets/business-1839876_1920.jpg" alt="gallery"/>
+      </div>
+      <div class="box wow slideInLeft">
+        <img src="../../assets/startup-594090_1920.jpg" alt="gallery"/>
+      </div>
+      <div class="box wow slideInRight">
+        <img src="../../assets/tast.jpg" alt="gallery"/>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+  <app-footer></app-footer>
+
+

@@ -1,0 +1,48 @@
+<div class="bar row fixed-top">
+  <div class="logo-bar col-4">
+    <a routerLink=""> <img src="../../assets/logo.png" alt="Home" class="logo"></a>
+    {{date | date:'medium'}}
+  </div>
+  <div class="col-8 nav-bar ">
+    <span [hidden]="fs.isLogin" ngbTooltip="Pentru a vedea cursurile ,întai inregistreazate">Courses </span>
+    <div [hidden]="!fs.isLogin" placement="bottom" ngbDropdown class="dropdown">
+      <a ngbDropdownToggle href="#" role="button" id="dropdownMenuLink2">
+        <a routerLink="/courses" class="course">Courses</a>
+      </a>
+      <div ngbDropdownMenu aria-labelledby="dropdownMenu4">
+        <a class="dropdown-item" href="#" ngbDropdownItem>HTML/CSS</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>JavaScript</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>Java</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>PHP/MySQL</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>Testare Manuală</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>Testare Automată</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>Adobe Photoshop</a>
+        <a class="dropdown-item" href="#" ngbDropdownItem>UI/UX Design </a>
+      </div>
+    </div>
+    <a routerLink="/team" class="team">Team</a>
+    <a routerLink="/about" class="about">About</a>
+    <a [hidden]="fs.isLogin" routerLink="/login" class="about">Login</a>
+    <div [hidden]="!fs.isLogin" placement="bottom" ngbDropdown class="dropdown">
+      <a ngbDropdownToggle class="about">
+        <img src="../../assets/logare.jpg" alt="" class="avatar">
+      </a>
+      <div ngbDropdownMenu aria-labelledby="dropdownMenu4">
+        <a class="dropdown-item" (click)="logout()" ngbDropdownItem>Logout</a>
+      </div>
+    </div>
+    <a [hidden]="fs.isLogin" routerLink="/register" class="course">Register</a>
+  </div>
+
+  <div ngbDropdown class="d-inline-block sm-nav">
+    <a ngbDropdownToggle href="#" role="button" id="dropdownMenuLink">
+      <img src="../../assets/logo.png" alt="Home" class="logo">
+    </a>
+    <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+      <a routerLink="/courses" class="course " ngbDropdownItem>Courses</a>
+      <a routerLink="/team" class="team" ngbDropdownItem>Team</a>
+      <a routerLink="/about" class="about" ngbDropdownItem>About</a>
+      <a routerLink="/login" class="login" ngbDropdownItem>Login</a>
+    </div>
+  </div>
+</div>

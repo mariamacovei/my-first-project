@@ -1,0 +1,26 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+h3{
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+  font-family:Verdana;
+}
+
+.md-image {
+  @include media-breakpoint-down(sm){
+    display: none !important;
+  }
+
+}
+
+.sm-image {
+  @include media-breakpoint-up(md){
+    display: none !important;
+  }
+}
+
